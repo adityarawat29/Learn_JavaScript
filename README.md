@@ -1,6 +1,6 @@
 # Learn_JavaScript
 this part will have all the info where you can start learning JavaScript from basic
-Hey Guys , for all those who have interest in JavaScript , will share with you guys all the deatils :
+Guys, for all those who have interest in JavaScript , will share with you guys all the deatils :
 start from http://jsforcats.com/ 
 its a really great website where you can start learing the basics of JavaScript .
 after that a book i would recommned You Don't know JS . 
