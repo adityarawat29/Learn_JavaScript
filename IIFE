@@ -1,0 +1,64 @@
+IMMEDIATELY INVOKED FUNCTION EXPRESSION - IIFE
+
+IIFE is a function expression that automatically invokes after completion of the definition.
+
+for Example1.js :
+
+var userName = "Bill";
+
+function display(name)
+{
+    alert("MyScript1.js: " + name);
+}
+
+display(userName);
+
+Example2.js :
+
+var userName = "Steve";
+
+function display(name)
+{
+    alert("MyScript2.js: " + name);
+}
+
+display(userName);
+
+Now, if you include these JS files in your web page then guess what will happen?
+
+you will find that every time it call display() function in Example2.js because Example2.js included after Example1.js in a web page. 
+So JavaScript considers last definition of a function if two functions have the same name.
+
+IEFE solves this problem by having its own scope and restricting functions and variables to become global. 
+The functions and variables declare inside IIFE will not pollute global scope even they have same name as global variables & functions. 
+So let's see what is an IIFE is.
+
+Example1.js :
+
+(function () {
+    var userName = "Steve";
+    
+    function display(name)
+    {
+        alert("MyScript2.js: " + name);
+    }
+
+    display(userName);
+  })();
+  
+  Example2.js : 
+  
+  var userName = "Bill";
+
+(function (name) {
+
+    function display(name)
+    {
+        alert("MyScript2.js: " + name);
+    }
+
+    display(name);
+})(userName);
+
+
+So, even if Example1.js & Example2.js file includes functions and variables with the same name, they won't conflict with each other
