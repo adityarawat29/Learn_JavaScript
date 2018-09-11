@@ -1,0 +1,61 @@
+Hello Guys , in this File i have done some different Functions we use in JavaScript .
+although there are many functions but i have mentioned here most used functions.
+
+Hope this help you guys.
+
+var stringone = "        I'm learning JavaScript all my by self     ";
+var stringtwo = "want to be Front end developer" ;
+
+//charAt() it tells the positing of the character 
+
+console.log(stringone.charAt(1));
+
+//charCodeAt() it tell us the unicode of a character
+
+console.log(stringtwo.charCodeAt(3));
+
+//concat() joins two or more strings together 
+
+console.log(stringone.concat(stringtwo));
+
+//endsWith() method determines whether a string ends with the characters of a specified string, returning true or false as appropriate.
+
+console.log(stringone.endsWith("self")); // will get true cause at the end "self" is defined
+console.log(stringtwo.endsWith("!")); // will get False since "!" is not there at the end 
+
+//includes() tell us whether the given character is present or not
+
+console.log(stringtwo.includes("front")); // will return true cause in string two "front" word is there
+
+//indexOf() method returns the index within the calling String object of the first occurrence of the specified value,Returns -1 if the value is not found. 
+
+console.log(stringone.indexOf("JavaScript"));
+
+//repeat()method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
+console.log(stringtwo.repeat(2));
+
+//search() method executes a search for a match between a regular expression and this String object.
+
+console.log(stringtwo.search("end"));
+
+//slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
+
+console.log(stringone.slice(4,8));
+
+//split()  method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+console.log(stringtwo.split(" "));
+
+//substring() works as same as slice , will produce same output
+
+//toLowerCase() method returns the calling string value converted to lower case.
+
+console.log(stringtwo.toLowerCase("front"));
+
+//toUpperCase()  method returns the calling string value converted to uppercase
+
+console.log(stringone.toUpperCase("self"));
+
+//trim() method removes whitespace from both ends of a string.
+
+console.log(stringone.trim());
