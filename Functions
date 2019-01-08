@@ -1,0 +1,99 @@
+/*console.log (square(4));
+
+function square (number)
+{
+    return number * number;
+}
+
+*/
+//Closures
+
+// function addSquare(a,b)
+// {
+//     function square(x)
+//     {
+//         return x*x;
+//     }
+
+//     return square(a) + square(b);
+// }
+
+// document.write(addSquare(2,3));
+
+//another Closure
+
+// function adi()
+// {
+//     var name ='Aditya';
+//     function displayName()
+//     {
+//         alert(name);
+//     }
+//     displayName();
+// }
+// adi();
+
+//Closures can do more than just read their outer functions’ local variables — they can overwrite them, too.
+
+// function adi()
+// {
+//     var name ='Aditya';
+    
+//     function displayName()
+//     {
+//         alert(name);
+//     }
+
+//     function setName(newName)
+//     {
+//         name = newName;
+//     }
+
+//     displayName();
+//     setName('Aditya Singh Rawat');
+//     displayName();
+// }
+// adi();
+
+//default parameters
+
+// function addition(a, b,c=1)
+// {
+//     return a+b+c;
+// }
+// document.write(addition(5,2));
+
+//spread parameters : allows an iterable such as an array expression or string to be expanded in places 
+//where zero or more arguments (for function calls) or elements (for array literals) are expected
+
+// function addNumbers(a,b,c)
+// {
+//     console.log(a+b+c);
+// }
+// var numbers = [5,3,2];
+// addNumbers(...numbers);
+
+//rest parameters : condense multiple elemnts into an array
+
+// function table(a, ...numbers)
+// {
+//    return numbers.map(x => a*x);
+// }
+
+// document.writeln(table(2,1,2,3,4,5,6,7,8,9));
+
+// Arrow Functions
+
+// var show = () => { document.write('Aditya Singh Rawat');};
+// show();
+
+var showName = () => `this is Aditya`
+document.write(showName());
+
+
+
+
+
+
+
+
