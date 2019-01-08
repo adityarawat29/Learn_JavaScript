@@ -1,4 +1,8 @@
 # Learn_JavaScript
+
+Today i have added all the things you can learn about functions in javascript.
+
+
 this part will have all the info where you can start learning JavaScript from basic
 Guys, for all those who have interest in JavaScript , will share with you guys all the deatils :
 start from http://jsforcats.com/ 
