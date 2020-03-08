@@ -1,0 +1,14 @@
+let student_info = {
+    first_name : 'Aditya',
+    mobile_number : 9654375387,
+    gender : 'Male'
+}
+
+let libaray_info = {
+    first_name : 'Aditya',
+    books_issue : 2
+}
+
+libaray_info.__proto__ = student_info;
+
+console.log(libaray_info.mobile_number); // this mobile number isn't present in libaray_info , but since we used inheritance we are able to use it.
